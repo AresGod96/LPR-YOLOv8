@@ -28,12 +28,11 @@ A complete License Plate Recognition (LPR) pipeline using **YOLOv8** for plate d
 
 ## 📁 Folder Structure
 ```bash
-├── datasets/              # Custom data config and annotations
 ├── runs/                  # YOLOv8 training outputs (ignored by .gitignore)
-├── vn_license_plates/     # Vietnamese license plate samples
+├── vn_license_plates/     # Vietnamese license plate dataset
 ├── inference.py           # Inference pipeline using trained model
 ├── train.py               # Training script with Ultralytics YOLOv8
-├── utils.py               # Utility functions for visualization & OCR
+├── lp_recognition.ipynb   # Notebook for simple training and inference
 └── README.md
 ```
 ---
