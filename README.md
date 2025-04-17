@@ -51,8 +51,16 @@ pip install ultralytics easyocr opencv-python
 ```
 
 ### 3. Prepare Dataset
+You can prepare your own dataset or use the [Vietnam License Plate Segment Datasets](https://www.kaggle.com/datasets/duydieunguyen/licenseplates/data). Put them under the folder `vn_license_plates` in the following structure
+```bash
+├ vn_license_plates
+├── images/
+├── labels/
+├── dataset.yaml
+```
+Note: the annotation should be in YOLO format.
 
-### 4. Train 
+### 4. Train
 ```bash
 python train.py
 ```
@@ -60,6 +68,9 @@ or
 ```bash
 yolo task=detect mode=train data=./vn_license_plates/dataset.yaml model=yolov8m.pt imgsz=640 device='0,1' patience=20
 ```
+
+### 5. Inference
+Refer to [lp_recognition.ipynb](./lp_recognition.ipynb) for loading your trained model and inference visualization.
 
 ## 🙌 Acknowledgements
 - [**Ultralytics YOLOv8**](https://github.com/ultralytics/ultralytics)
