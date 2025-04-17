@@ -50,6 +50,17 @@ cd LPR-YOLOv8
 pip install ultralytics easyocr opencv-python
 ```
 
+### 3. Prepare Dataset
+
+### 4. Train 
+```bash
+python train.py
+```
+or
+```bash
+yolo task=detect mode=train data=./vn_license_plates/dataset.yaml model=yolov8m.pt imgsz=640 device='0,1' patience=20
+```
+
 ## 🙌 Acknowledgements
 - [**Ultralytics YOLOv8**](https://github.com/ultralytics/ultralytics)
 - [**EasyOCR**](https://github.com/JaidedAI/EasyOCR)
