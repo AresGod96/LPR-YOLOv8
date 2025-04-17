@@ -49,3 +49,8 @@ cd LPR-YOLOv8
 ```bash
 pip install ultralytics easyocr opencv-python
 ```
+
+## 🙌 Acknowledgements
+- [**Ultralytics YOLOv8**](https://github.com/ultralytics/ultralytics)
+- [**EasyOCR**](https://github.com/JaidedAI/EasyOCR)
+- [**Vietnam License Plate Segment Datasets**](https://www.kaggle.com/datasets/duydieunguyen/licenseplates/data)
