@@ -1,2 +1,3 @@
-runs/*
-vn_license_plates/*
+vn_license_plates/images/*
+vn_license_plates/labels/*
+vn_license_plates/labels_bckup/*
