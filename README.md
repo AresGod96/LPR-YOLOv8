@@ -61,10 +61,11 @@ You can prepare your own dataset or use the [Vietnam License Plate Segment Datas
 Note: the annotation should be in YOLO format.
 
 ### 4. Train
+You can either use train script [`train.py`](./train.py)
 ```bash
 python train.py
 ```
-or
+or [Ultralytics CLI](https://docs.ultralytics.com/modes/train/)
 ```bash
 yolo task=detect mode=train data=./vn_license_plates/dataset.yaml model=yolov8m.pt imgsz=640 device='0,1' patience=20
 ```
